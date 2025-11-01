@@ -1,0 +1,22 @@
+title: My Dark Wiki
+description: Тёмная wiki на Jekyll + Just the Docs
+theme: just-the-docs
+# или remote_theme: just-the-docs/just-the-docs
+
+url: "https://wfork-org.github.io"
+baseurl: "/my-wiki"
+
+# Автоматический вывод docs
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+defaults:
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: default
+      has_children: false
+
+search_enabled: true
